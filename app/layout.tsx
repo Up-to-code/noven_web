@@ -93,8 +93,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <body className="font-sans antialiased relative min-h-screen">
-        {/* Subtle Background Lighting */}
-        <div className="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-foreground/[0.03] via-background to-background pointer-events-none" />
         <Navbar />
         <Breadcrumbs />
         {children}

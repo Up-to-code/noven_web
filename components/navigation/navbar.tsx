@@ -9,9 +9,9 @@ export function Navbar() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/noven/noven', label: 'Noven' },
+    { href: '/#features', label: 'Features' },
+    { href: '/#screenshots', label: 'Screenshots' },
     { href: '/noven/noven/privacy', label: 'Privacy' },
-    { href: '/contact', label: 'Contact' },
   ]
 
   return (
@@ -39,10 +39,10 @@ export function Navbar() {
           {/* CTA Button + Mobile Menu Button */}
           <div className="flex items-center gap-4">
             <Link 
-              href="/contact"
+              href="/noven/noven"
               className="hidden md:inline-flex items-center justify-center h-8 px-5 rounded-full bg-foreground text-background text-[13px] font-bold hover:opacity-90 transition-opacity"
             >
-              Contact
+              View App
             </Link>
 
             {/* Mobile Menu Button */}
@@ -75,11 +75,11 @@ export function Navbar() {
             ))}
             <div className="px-4 pt-4">
               <Link 
-                href="/contact"
+                href="/noven/noven"
                 className="flex items-center justify-center h-12 w-full rounded-[14px] bg-foreground text-background text-[15px] font-bold hover:opacity-90 transition-opacity"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                View App
               </Link>
             </div>
           </div>

@@ -4,7 +4,7 @@
 
 | Screen | Purpose | Required UI | Primary Action | Exit Path | Status |
 | --- | --- | --- | --- | --- | --- |
-| `/` | Introduce Noven and route visitors into the app detail flow. | Hero, Noven intro, app card, feature grid, developer section, privacy/support footer. | Explore Noven. | Scrolls to `#apps`, then app card opens `/noven/noven`. | Pass |
+| `/` | Sell Noven as the primary product and route visitors into App Store/product/legal flows. | App-first hero, real phone screenshots, App Store CTA, product-page CTA, feature grid, screenshot section, review/support links. | View on App Store. | Opens App Store listing URL for app ID `6772000400`. | Pass |
 | `/noven/noven` | Present the Noven App Store-style product page. | Icon, title, tagline, App Store CTA, overview, screenshots, features, developer support, legal links. | GET. | Opens App Store listing URL for app ID `6772000400`. | Pass |
 | `/noven/noven/privacy` | Explain Noven data practices for users and App Review. | Back link, data collection, storage/sync, user choices, support contact. | Back to App. | Returns to `/noven/noven`. | Pass |
 | `/noven/noven/terms` | Explain Noven usage terms and subscription handling. | Back link, habit tracking terms, responsibility, subscriptions, acceptable use, support contact. | Back to App. | Returns to `/noven/noven`. | Pass |
